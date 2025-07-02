@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <header class="text-center p-4">
@@ -16,21 +17,85 @@
                     </div>
                 </div>
                 <div class="col-md-2 text-center">
-                    <div class="profile-photo rounded-circle border p-3">
-                        FOTO
-                    </div>
+                    <img src="/assets/img/prof_pic.jpg"  alt="Patricia">
                 </div>
             </div>
         </div>
     </header>
 
     <main class="container py-4">
+        <!-- Proyecto 1 -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Este es el diseño del proyecto Pocho la pantera</h2>
+
+            <div id="pochoCarousel" class="carousel slide mx-auto" data-bs-ride="carousel" style="max-width: 600px;">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/img/pocho1.jpg" class="d-block w-100" alt="Imagen 1 Pocho">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/pocho2.jpg" class="d-block w-100" alt="Imagen 2 Pocho">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/pocho3.jpg" class="d-block w-100" alt="Imagen 3 Pocho">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/img/pocho4.jpg" class="d-block w-100" alt="Imagen 4 Pocho">
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#pochoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#pochoCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+
+            <p class="text-center mt-3">
+                Surge de la imperiosa necesidad de solucionar ese problema que todos vivenciamos musicalmente.<br>
+                Puedes probarlo en <a href="https://www.pocholapantera.cl" target="_blank">www.pocholapantera.cl</a>
+            </p>
+        </section>
+        <!-- Proyecto 2 -->
+        <section class="mb-5">
+            <h2 class="text-center">Este es el diseño del proyecto El gatito miau miau</h2>
+            <div class="row text-center my-3">
+                <div class="col">
+                    <div class="project-box">
+                        <img src="/assets/img/gato1.jpg" alt="Gatito 1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="project-box">
+                        <img src="/assets/img/gato2.jpg" alt="Gatito 2 ">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="project-box">
+                        <img src="/assets/img/gato3.jpg" alt="Gatito 3">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="project-box">
+                        <img src="/assets/img/gato4.jpg" alt="Gatito 4">
+                    </div>
+                </div>
+            </div>
+            <p class="text-center">
+                Como amante de los gatos, he desarrollado esta plataforma para adoptar o apadrinar tu propio gatito.<br>
+                Puedes comenzar en <a href="https://www.gatitomiaumiau.cl" target="_blank">www.gatitomiaumiau.cl</a>
+            </p>
+        </section>
         <!-- Botón de contacto -->
         <div class="text-center">
             <button id="contactoBtn" class="btn btn-primary">Contacto</button>
         </div>
 
-        <div id="contactoForm" class="text-center mt-4">
+        <div class="text-center mt-4">
             <p>¡Gracias por tu interés! Puedes escribirme a patricia@example.com</p>
         </div>
     </main>
@@ -42,5 +107,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

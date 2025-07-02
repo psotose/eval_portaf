@@ -1,0 +1,30 @@
+.intro-box {
+    background-color: #f0f0f0;
+    font-size: 1.1em;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.project-box {
+    height: 100px;
+    background-color: #f9f9f9;
+    border: 2px dashed #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .project-box {
+        margin-bottom: 10px;
+    }
+}
